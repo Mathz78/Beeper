@@ -12,6 +12,11 @@ h1 {
 }
 
 p {
+    position: relative;
     font-size: 24px;
     color: #6c7b95;
+}
+
+.button {
+    margin: 30px;
 }
