@@ -1,0 +1,17 @@
+body {
+    background-color: #ecfbfc;
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1 {
+    font-size: 64px;
+    color: #fe346e;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 24px;
+    color: #6c7b95;
+}
