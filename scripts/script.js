@@ -1,10 +1,20 @@
-function beeper() {
-    x = 3;
+var sound = new Howl({
+    src: ['sound/sound.mp3'],
+    html5: true,
+    loop: true
+});
 
-    var sound = document.getElementById("audio");
-    sound.play();
-    setTimeout(beeper, x*1000);
+function playSound() {
+    var text = window.document.getElementById('button');
+    text.innerHTML = "Pause";
 
-    // var text = window.document.getElementById('button');
-    // text.innerText = "Click here to stop";
+    if (sound.playing()) {
+        text.innerHTML = "Click to Play";
+        sound.pause();
+    } else {
+        text.innerHTML = "Click to Pause";
+        sound.play();
+    }
+        
+    Howler.volume(0.5);
 }
