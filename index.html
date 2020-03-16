@@ -22,9 +22,9 @@
     <h1>Beeper</h1>
     <p>That's a website to remember you to blink!</p>
     <button id="button" type="button" class="button btn btn-dark btn-lg" onclick="playSound()">Click here</button>
+    <br><input id="volumeRange" type="range" step=".01" min=".00" max="1" oninput="volume = (this.value)" onchange="changeVolume()"></input>
     <p>The beep will sound every 3 seconds.</p>
-    <p>
-        We all know that when we are at the computer we forget to blink (which <br> is very bad for our eyes) so this site will remind you to blink, so that the <br> computer does not impair your vision.</p>
+    <p>We all know that when we are at the computer we forget to blink (which <br> is very bad for our eyes) so this site will remind you to blink, so that the <br> computer does not impair your vision.</p>
 </body>
 
 </html>
