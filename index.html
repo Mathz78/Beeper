@@ -11,6 +11,9 @@
     <!-- Gooogle Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
 
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
     <!-- JavaScript -->
     <script src="scripts/howler.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
@@ -22,7 +25,11 @@
     <h1>Beeper</h1>
     <p>That's a website to remember you to blink!</p>
     <button id="button" type="button" class="button btn btn-dark btn-lg" onclick="playSound()">Click here</button>
-    <br><input id="volumeRange" type="range" step=".01" min=".00" max="1" oninput="volume = (this.value)" onchange="changeVolume()"></input>
+   
+    <div class="volumeSection">
+        <i class="volumeIcon fas fa-volume-up"></i>
+        <input id="volumeRange" type="range" step=".01" min=".00" max="1" oninput="volume = (this.value)" onchange="changeVolume()"></input>
+    </div>
     <p>The beep will sound every 3 seconds.</p>
     <p>We all know that when we are at the computer we forget to blink (which <br> is very bad for our eyes) so this site will remind you to blink, so that the <br> computer does not impair your vision.</p>
 </body>
